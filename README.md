@@ -10,6 +10,8 @@
 
 ---
 
+<center><img src="im3.png" alt="myIM3"></center>
+
 ## 📌 Ringkasan Endpoint  
 Semua endpoint menggunakan **POST**.
 
