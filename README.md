@@ -91,7 +91,7 @@ curl -X POST "$BASE/superhemat/list" \
   -d '{"token":"TOKEN"}'
 ```
 
-## 🚀 4. /superhemat
+## 🚀 5. /superhemat
 ```bash
 curl -X POST "$BASE/superhemat" \
   -H "Content-Type: application/json" \
