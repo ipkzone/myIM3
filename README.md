@@ -60,7 +60,7 @@ $AUTH = 3203fccb29d361eac970918731d68255abc9c7907fba4b54f432743f754f62f3
 curl -X POST "$BASE/send" \
   -H "Content-Type: application/json" \
   -H "X-License-Key: $LIC" \
-  -H "Authorization: $AUTH" \
+  -H "Authorization: Bearer $AUTH" \
   -d '{"phone":"8123456789"}'
 ```
 
@@ -69,7 +69,7 @@ curl -X POST "$BASE/send" \
 curl -X POST "$BASE/verify" \
   -H "Content-Type: application/json" \
   -H "X-License-Key: $LIC" \
-  -H "Authorization: $AUTH" \
+  -H "Authorization: Bearer $AUTH" \
   -d '{"transid":"TRANSID_FROM_SEND","otp":"123456"}'
 ```
 
@@ -78,7 +78,7 @@ curl -X POST "$BASE/verify" \
 curl -X POST "$BASE/dashboard" \
   -H "Content-Type: application/json" \
   -H "X-License-Key: $LIC" \
-  -H "Authorization: $AUTH" \
+  -H "Authorization: Bearer $AUTH" \
   -d '{"token":"TOKEN_FROM_VERIFY"}'
 ```
 
@@ -87,7 +87,7 @@ curl -X POST "$BASE/dashboard" \
 curl -X POST "$BASE/superhemat/list" \
   -H "Content-Type: application/json" \
   -H "X-License-Key: $LIC" \
-  -H "Authorization: $AUTH" \
+  -H "Authorization: Bearer $AUTH" \
   -d '{"token":"TOKEN"}'
 ```
 
@@ -96,7 +96,7 @@ curl -X POST "$BASE/superhemat/list" \
 curl -X POST "$BASE/superhemat" \
   -H "Content-Type: application/json" \
   -H "X-License-Key: $LIC" \
-  -H "Authorization: $AUTH" \
+  -H "Authorization: Bearer $AUTH" \
   -d '{"token":"TOKEN","package_id":0,"payment_method":"QRIS"}'
 ```
 
