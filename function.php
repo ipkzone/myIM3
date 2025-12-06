@@ -23,7 +23,7 @@ class MyIM3Api
         curl_setopt($ch, CURLOPT_HTTPHEADER, [
             "Content-Type: application/json",
             "X-License-Key: {$this->licenseKey}",
-            "Authorization: {$this->authToken}",
+            "Authorization: Bearer {$this->authToken}",
         ]);
 
         curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($data));
